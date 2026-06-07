@@ -1,0 +1,580 @@
+Move Zeroes
+Problem Statement:
+Rearrange a delivery queue where zeros indicate unavailable trucks; push them to the end without disrupting the rest.
+
+	Sample Input:
+	nums = [0, 1, 0, 3, 12]
+	Expected Output:
+	[1, 3, 12, 0, 0]
+
+	Input:
+	20,0,19,5,0,3,10,0,2
+	Output:
+	20,19,5,3,10,2,0,0,0
+
+	Input:
+	3,0,0,1,0,5,0,6,0
+	Output:
+	3,1,5,6,0,0,0,0,0
+
+
+
+	Sort Colors (Dutch National Flag)
+	Problem Statement:
+		Assume that your are part of support team in IRCTC app where customers would raise issue and it will be considered priority ticket such as 0, 1 and 2. now today tickets are in the bucket and you need to arrange it by priority
+		Example:
+		Input:
+		2,0,0,1,0,2,0,1
+		Output:
+		0,0,0,0,1,1,2,2
+		Sample Input:
+		nums = [2, 0, 2, 1, 1, 0]
+		Expected Output:
+		[0, 0, 1, 1, 2, 2]
+
+
+
+
+1. In the super market end of each day finding the raised bills to customer with invoice number, now find the 		missing invoice of the day.
+		Example:
+		Input:
+		8,10,3,1,4,2,5
+		Output:
+		6
+		Input:
+		45,91,90,92,46
+		Output:
+		47
+		Input:
+		0,1,2,4,5,6,7
+		Output:
+		3
+
+
+Best Time to Buy and Sell Stock
+Problem Statement:
+Identify the best day to buy and the best day to sell for highest profit from historical stock prices.
+Sample Input:
+	prices = [7, 1, 5, 3, 6, 4]
+	Buy at 1 and sell at 6.
+
+	45, 12, 3, 10, 50
+	Best time to buy 3 best time to sell 50
+
+	-10, -5, -2, -1, 1
+	Best time to buy -10 best time to sell 1
+
+	90, 40, 20, 10, 4
+	Best time to buy 10 best time to sell 4
+
+
+
+Consider that you are building console interface of customer's loan application where customer used to provide name, pan, aadhaar, email then they will set the password for their account. your role is to validate those information's using regex.
+Example:
+Input:
+Name: "Raz",
+Password: "razak$123",
+Aadhaar: "765456787912",
+PAN: "ABCDE1234F",
+Email: "example@mail.com"
+
+Output:
+Account created
+
+Example:
+Input:
+Name: "Ra",
+Password: "razak$123",
+Aadhaar: "7654567",
+PAN: "ABCDE1234F",
+Email: "example@mail.com"
+
+Output:
+Invalid name,invalid aadhaar
+
+Example:
+Input:
+Name: "Raz",
+Password: "razak123",
+Aadhaar: "765456787912",
+PAN: "ABCDE1234F",
+Email: "example@mail.c"
+
+Output:
+Invalid password, invalid email
+
+
+
+
+49. Group Anagrams
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+Example 1:
+Input: strs = ["eat","tea","tan","ate","nat","bat"]
+Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+Explanation:
+There is no string in strs that can be rearranged to form "bat".
+The strings "nat" and "tan" are anagrams as they can be rearranged to form each other.
+The strings "ate", "eat", and "tea" are anagrams as they can be rearranged to form each other.
+
+Example 2:
+Input: strs = [""]
+Output: [[""]]
+
+Example 3:
+Input: strs = ["a"]
+Output: [["a"]]
+
+
+
+53. Maximum Subarray
+Given an integer array nums, find the subarray with the largest sum, and return its sum.
+Example 1:
+Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
+Output: 6
+Explanation: The subarray [4,-1,2,1] has the largest sum 6.
+Example 2:
+Input: nums = [1]
+Output: 1
+Explanation: The subarray [1] has the largest sum 1.
+Example 3:
+Input: nums = [5,4,-1,7,8]
+Output: 23
+Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
+
+
+
+48. Rotate Image
+You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
+You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
+Example 1:
+Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+Output: [[7,4,1],[8,5,2],[9,6,3]]
+
+Example 2:
+Input: matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
+Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
+
+
+
+
+Object oriented Programming
+Class
+Object
+Encapsulation
+Overloading
+
+Climbing Stairs
+input : 3
+Output: 3
+input: 5
+Output: 8
+input: 4
+output: 
+
+
+Using recursion find prefix and postfix sum
+Input:
+23,12,98,45,18,45,12,98
+Output:
+Prefix Sum: [23, 35, 133, 178, 196, 241, 253, 351]
+Postfix Sum: [351, 328, 316, 218, 173, 155, 110, 98]
+
+
+merge sorted arrays:
+You are given two sorted integer arrays, nums1 and nums2.
+Array nums1 has a length of m + n, where the first m elements are valid and sorted, and the last n elements are empty (represented as 0).
+Array nums2 has a length of n and contains n sorted integers.
+Write a function merge(int[] nums1, int m, int[] nums2, int n) that merges the two arrays into a single sorted array in non-decreasing order, storing the result inside nums1.
+The merge must be done in-place, without using extra arrays.
+
+Sample
+Input:
+nums1 = [1, 3, 5, 0, 0, 0], m = 3
+nums2 = [2, 4, 6], n = 3
+Output:
+nums1 = [1, 2, 3, 4, 5, 6]
+
+
+153. Find Minimum in Rotated Sorted Array
+Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
+[4,5,6,7,0,1,2] if it was rotated 4 times.
+[0,1,2,4,5,6,7] if it was rotated 7 times.
+Notice that rotating an array [a[0], a[1], a[2], ..., a[n-1]] 1 time results in the array [a[n-1], a[0], a[1], a[2], ..., a[n-2]].
+Given the sorted rotated array nums of unique elements, return the minimum element of this array.
+You must write an algorithm that runs in O(log n) time.
+
+Example 1:
+Input: nums = [3,4,5,1,2]
+Output: 1
+Explanation: The original array was [1,2,3,4,5] rotated 3 times.
+
+Example 2:
+Input: nums = [4,5,6,7,0,1,2]
+Output: 0
+Explanation: The original array was [0,1,2,4,5,6,7] and it was rotated 4 times.
+
+Example 3:
+Input: nums = [11,13,15,17]
+Output: 11
+Explanation: The original array was [11,13,15,17] and it was rotated 4 times. 
+
+
+
+
+322. Coin Change
+You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
+Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+You may assume that you have an infinite number of each kind of coin.
+
+Example 1:
+Input: coins = [1,2,5], amount = 11
+Output: 3
+Explanation: 11 = 5 + 5 + 1
+
+Example 2:
+Input: coins = [2], amount = 3
+Output: -1
+
+Example 3:
+Input: coins = [1], amount = 0
+Output: 0
+
+435. Non-overlapping Intervals
+Given an array of intervals intervals where intervals[i] = [starti, endi], return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
+Note that intervals which only touch at a point are non-overlapping. For example, [1, 2] and [2, 3] are non-overlapping.
+
+Example 1:
+Input: intervals = [[1,2],[2,3],[3,4],[1,3]]
+Output: 1
+Explanation: [1,3] can be removed and the rest of the intervals are non-overlapping.
+
+Example 2:
+Input: intervals = [[1,2],[1,2],[1,2]]
+Output: 2
+Explanation: You need to remove two [1,2] to make the rest of the intervals non-overlapping.
+
+Example 3:
+Input: intervals = [[1,2],[2,3]]
+Output: 0
+Explanation: You don't need to remove any of the intervals since they're already non-overlapping.
+
+
+
+Modifiers:
+public, static, private, default, final, abstract, protected
+
+
+Loggings:
+java.util.Logger
+levels:
+INFO
+DEBUG
+severe
+WARN
+
+Error: can;t be handled
+Exception: can be handled
+Exceptions are classes: printStrackTrace()
+
+	Throwable>> interface
+	Exception
+	RuntimeException
+
+	Compile/Checked:
+		IOException
+		InterruptedException
+	Runtime/Unchecked:
+		ArrayIndexOutOfBoundException:
+		NumberFormatException
+		InputMismatchException
+
+Handle the exception:
+	try{}
+	catch(){}
+	finally{}
+	
+
+	thtows >> near method signature
+
+
+
+forward exception >> throw
+number of chances via nested try catch
+user defined exception
+
+
+Minimum Distance to calculate transfer one word to another 
+Imagine you are a software engineer working on a document editing application. The application allows users to edit and correct typos in their documents. One of the features you are developing is a tool to calculate the minimum number of operations required to transform one word into another. This feature is crucial for suggesting the most efficient edits and corrections to the users.
+Task: Given two words, implement a function that calculates the minimum number of operations required to convert the first word into the second word. The allowed operations are:
+Insert a character, Delete a character, Replace a character
+Input:
+Two strings word1 and word2 representing the original word and the target word, respectively.
+Output:
+An integer representing the minimum number of operations required to convert word1 into word2.
+		Example:
+		Input: word1 = "horse", word2 = "rose"
+		Output: 2
+		Explanation:
+		To transform "horse" into "rose", the following 2 operations are required:
+		  1. Replace 'h' with 'r' -> "rorse"
+		  2. Delete 'r' -> "rose"
+		Input: word1 = "horse", word2 = "ros"
+		Output: 3
+		Input: word1 = "madam", word2 = "mam"
+		Output: 2
+
+
+
+300. Longest Increasing Subsequence
+Given an integer array nums, return the length of the longest strictly increasing subsequence.
+
+Example 1:
+Input: nums = [10,9,2,5,3,7,101,18]
+Output: 4
+Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
+
+Example 2:
+Input: nums = [0,1,0,3,2,3]
+Output: 4
+
+Example 3:
+Input: nums = [7,7,7,7,7,7,7]
+Output: 1
+
+
+
+62. Unique Paths
+There is a robot on an m x n grid. The robot is initially located at the top-left corner (i.e., grid[0][0]). The robot tries to move to the bottom-right corner (i.e., grid[m - 1][n - 1]). The robot can only move either down or right at any point in time.
+Given the two integers m and n, return the number of possible unique paths that the robot can take to reach the bottom-right corner.
+The test cases are generated so that the answer will be less than or equal to 2 * 109.
+
+Example 1:
+Input: m = 3, n = 7
+Output: 28
+
+Example 2:
+Input: m = 3, n = 2
+Output: 3
+Explanation: From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:
+1. Right -> Down -> Down
+2. Down -> Down -> Right
+3. Down -> Right -> Down
+
+1143. Longest Common Subsequence
+Given two strings text1 and text2, return the length of their longest common subsequence. If there is no common subsequence, return 0.
+A subsequence of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.
+For example, "ace" is a subsequence of "abcde".
+A common subsequence of two strings is a subsequence that is common to both strings.
+
+Example 1:
+Input: text1 = "abcde", text2 = "ace" 
+Output: 3  
+Explanation: The longest common subsequence is "ace" and its length is 3.
+
+Example 2:
+Input: text1 = "abc", text2 = "abc"
+Output: 3
+Explanation: The longest common subsequence is "abc" and its length is 3.
+
+Example 3:
+Input: text1 = "abc", text2 = "def"
+Output: 0
+Explanation: There is no such common subsequence, so the result is 0.
+
+
+Collection framework: java.util
+	dynamic memory allocation unlike array(insecure, fixed size, no builtin methods)
+	storage class's>> legacy, factory pattern
+
+	Iterable
+	Collections
+	Collections
+	List: ArrayList, LinkedList
+	Queue: PriorityQueue, Deque
+	Set: LinkedHashSet, HAshSet, TreeSet
+	Map: HashMap, TreeMap, Hashtable
+
+generic		>> type specific
+non generic	>> not type specific
+
+84. Largest Rectangle in Histogram
+Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
+
+Example 1:
+Input: heights = [2,1,5,6,2,3]
+Output: 10
+Explanation: The above is a histogram where width of each bar is 1.
+The largest rectangle is shown in the red area, which has an area = 10 units.
+
+Example 2:
+Input: heights = [2,4]
+Output: 4
+
+
+
+
+
+146. LRU Cache
+Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.
+Implement the LRUCache class:
+LRUCache(int capacity) Initialize the LRU cache with positive size capacity.
+int get(int key) Return the value of the key if the key exists, otherwise return -1.
+void put(int key, int value) Update the value of the key if the key exists. Otherwise, add the key-value pair to the cache. If the number of keys exceeds the capacity from this operation, evict the least recently used key.
+The functions get and put must each run in O(1) average time complexity.
+
+Example 1:
+Input
+["LRUCache", "put", "put", "get", "put", "get", "put", "get", "get", "get"]
+[[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]
+Output
+[null, null, null, 1, null, -1, null, -1, 3, 4]
+Explanation
+LRUCache lRUCache = new LRUCache(2);
+lRUCache.put(1, 1); // cache is {1=1}
+lRUCache.put(2, 2); // cache is {1=1, 2=2}
+lRUCache.get(1);    // return 1
+lRUCache.put(3, 3); // LRU key was 2, evicts key 2, cache is {1=1, 3=3}
+lRUCache.get(2);    // returns -1 (not found)
+lRUCache.put(4, 4); // LRU key was 1, evicts key 1, cache is {4=4, 3=3}
+lRUCache.get(1);    // return -1 (not found)
+lRUCache.get(3);    // return 3
+lRUCache.get(4);    // return 4
+
+
+
+
+239. Sliding Window Maximum
+You are given an array of integers nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.
+Return the max sliding window.
+
+Example 1:
+Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
+Output: [3,3,5,5,6,7]
+Explanation: 
+Window position                Max
+---------------               -----
+[1  3  -1] -3  5  3  6  7       3
+ 1 [3  -1  -3] 5  3  6  7       3
+ 1  3 [-1  -3  5] 3  6  7       5
+ 1  3  -1 [-3  5  3] 6  7       5
+ 1  3  -1  -3 [5  3  6] 7       6
+ 1  3  -1  -3  5 [3  6  7]      7
+
+Example 2:
+Input: nums = [1], k = 1
+Output: [1]
+
+
+771. Jewels and Stones
+You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
+Letters are case sensitive, so "a" is considered a different type of stone from "A".
+
+Example 1:
+Input: jewels = "aA", stones = "aAAbbbb"
+Output: 3
+
+Example 2:
+Input: jewels = "z", stones = "ZZ"
+Output: 0
+
+
+
+347. Top K Frequent Elements
+Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+Example 1:
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
+
+Example 2:
+Input: nums = [1], k = 1
+Output: [1]
+
+Example 3:
+Input: nums = [1,2,1,2,1,2,3,1,3,2], k = 2
+Output: [1,2]
+
+
+
+76. Minimum Window Substring
+User Behavior Analysis on E-commerce Platform
+An e-commerce platform tracks user activities like "search product," "add to cart," and "checkout." To optimize user journeys, analysts want to find the shortest sequence containing all these events.
+
+Problem Statement:
+Given a list of user activities, find the smallest window containing all key actions.
+
+Example:
+Input:
+activities = ["browse", "search product", "add to cart", "checkout", "feedback"]  
+required_actions = ["search product", "checkout"]
+Output:
+["search product", "add to cart", "checkout"]
+
+804. Unique Morse Code Words
+International Morse Code defines a standard encoding where each letter is mapped to a series of dots and dashes, as follows:
+'a' maps to ".-",
+'b' maps to "-...",
+'c' maps to "-.-.", and so on.
+For convenience, the full table for the 26 letters of the English alphabet is given below:
+[".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+Given an array of strings words where each word can be written as a concatenation of the Morse code of each letter.
+For example, "cab" can be written as "-.-..--...", which is the concatenation of "-.-.", ".-", and "-...". We will call such a concatenation the transformation of a word.
+Return the number of different transformations among all words we have.
+
+Example 1:
+Input: words = ["gin","zen","gig","msg"]
+Output: 2
+Explanation: The transformation of each word is:
+"gin" -> "--...-."
+"zen" -> "--...-."
+"gig" -> "--...--."
+"msg" -> "--...--."
+There are 2 different transformations: "--...-." and "--...--.".
+
+Example 2:
+Input: words = ["a"]
+Output: 1
+
+
+
+496. Next Greater Element I
+The next greater element of some element x in an array is the first greater element that is to the right of x in the same array.
+You are given two distinct 0-indexed integer arrays nums1 and nums2, where nums1 is a subset of nums2.
+For each 0 <= i < nums1.length, find the index j such that nums1[i] == nums2[j] and determine the next greater element of nums2[j] in nums2. If there is no next greater element, then the answer for this query is -1.
+Return an array ans of length nums1.length such that ans[i] is the next greater element as described above.
+
+Example 1:
+Input: nums1 = [4,1,2], nums2 = [1,3,4,2]
+Output: [-1,3,-1]
+Explanation: The next greater element for each value of nums1 is as follows:
+- 4 is underlined in nums2 = [1,3,4,2]. There is no next greater element, so the answer is -1.
+- 1 is underlined in nums2 = [1,3,4,2]. The next greater element is 3.
+- 2 is underlined in nums2 = [1,3,4,2]. There is no next greater element, so the answer is -1.
+
+Example 2:
+Input: nums1 = [2,4], nums2 = [1,2,3,4]
+Output: [3,-1]
+Explanation: The next greater element for each value of nums1 is as follows:
+- 2 is underlined in nums2 = [1,2,3,4]. The next greater element is 3.
+- 4 is underlined in nums2 = [1,2,3,4]. There is no next greater element, so the answer is -1.
+
+
+
+
+3. Longest Substring Without Repeating Characters
+Given a string s, find the length of the longest substring without duplicate characters.
+
+Example 1:
+Input: s = "abcabcbb"
+Output: 3
+Explanation: The answer is "abc", with the length of 3. Note that "bca" and "cab" are also correct answers.
+
+Example 2:
+Input: s = "bbbbb"
+Output: 1
+Explanation: The answer is "b", with the length of 1.
+
+Example 3:
+Input: s = "pwwkew"
+Output: 3
+Explanation: The answer is "wke", with the length of 3.
+Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
